@@ -1,5 +1,5 @@
 const getPath = (path: string): string => {
-  return path;
+  return '/frontend-mentor-io-time-tracking-dashboard' + path;
 };
 
 export default getPath;

@@ -41,7 +41,7 @@
     background-color: hsl(15, 100%, 70%);
     &::before {
       @include size(79px, 79px);
-      background-image: url(/images/icon-work.svg);
+      background-image: url(/frontend-mentor-io-time-tracking-dashboard/images/icon-work.svg);
     }
   }
 
@@ -49,7 +49,7 @@
     background-color: hsl(195, 74%, 62%);
     &::before {
       @include size(76px, 77px);
-      background-image: url(/images/icon-play.svg);
+      background-image: url(/frontend-mentor-io-time-tracking-dashboard/images/icon-play.svg);
     }
   }
 
@@ -57,7 +57,7 @@
     background-color: hsl(348, 100%, 68%);
     &::before {
       @include size(79px, 79px);
-      background-image: url(/images/icon-study.svg);
+      background-image: url(/frontend-mentor-io-time-tracking-dashboard/images/icon-study.svg);
     }
   }
 
@@ -66,7 +66,7 @@
     &::before {
       top: 0px;
       @include size(81px, 55px);
-      background-image: url(/images/icon-exercise.svg);
+      background-image: url(/frontend-mentor-io-time-tracking-dashboard/images/icon-exercise.svg);
     }
   }
 
@@ -75,14 +75,14 @@
     &::before {
       @include size(75px, 100px);
       top: -16px;
-      background-image: url(/images/icon-social.svg);
+      background-image: url(/frontend-mentor-io-time-tracking-dashboard/images/icon-social.svg);
     }
   }
   &.self-care {
     background-color: hsl(43, 84%, 65%);
     &::before {
       @include size(67px, 67px);
-      background-image: url(/images/icon-self-care.svg);
+      background-image: url(/frontend-mentor-io-time-tracking-dashboard/images/icon-self-care.svg);
     }
   }
 
