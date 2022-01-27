@@ -1,0 +1,142 @@
+@use './mixins' as *;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+body {
+  background-color: $very-dark-blue;
+}
+
+main {
+  @include size(100%, 100vh);
+  min-height: 620px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: auto auto;
+  gap: 30px;
+
+  @include media(tablet) {
+    height: auto;
+    margin-top: 84px;
+    margin-bottom: 80px;
+    grid-template-columns: auto;
+  }
+}
+
+.root-sidebar {
+  @include size(256px, 520px);
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: $dark-blue;
+
+  @include media(tablet) {
+    @include size(542px, 202px);
+  }
+
+  @include media(mobile) {
+    width: 86.67vw;
+  }
+
+  header {
+    background-color: $blue;
+    padding: 32px 30px;
+    @include size(100%, 352px);
+    border-radius: 16px;
+    color: white;
+
+    @include media(tablet) {
+      @include size(100%, 134px);
+      display: grid;
+      grid-template-columns: auto auto;
+      justify-content: start;
+      align-content: center;
+      gap: 16px;
+    }
+
+    .title-container {
+      @include media(tablet) {
+        height: 70px;
+        display: grid;
+        grid-auto-flow: row;
+        align-content: center;
+      }
+    }
+
+    .subtitle {
+      margin-top: 40px;
+      font-size: 15px;
+      opacity: 80%;
+      font-weight: 300;
+      @include media(tablet) {
+        margin-top: 0px;
+      }
+    }
+
+    .title {
+      margin-top: 18px;
+      font-size: 40px;
+      font-weight: 300;
+      @include media(tablet) {
+        margin-top: 8px;
+        font-size: 24px;
+      }
+    }
+  }
+
+  .avatar-container {
+    @include size(86px, 86px);
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    @include media(tablet) {
+      @include size(70px, 70px);
+    }
+
+    .avatar {
+      @include size(80px, 80px);
+      @include media(tablet) {
+        @include size(64px, 64px);
+      }
+    }
+  }
+
+  .timeframes {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: start;
+    padding: 28px 30px;
+    gap: 22px;
+
+    @include media(tablet) {
+      @include size(100%, 68px);
+      display: grid;
+      grid-auto-flow: column;
+      justify-content: space-between;
+      align-content: center;
+      padding: 0px 30px;
+    }
+    button {
+      border: none;
+      background-color: inherit;
+      color: $pale-blue;
+      text-align: left;
+      font-size: 18px;
+      //font-weight: 300;
+      cursor: pointer;
+      &.active,
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}
