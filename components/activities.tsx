@@ -1,9 +1,10 @@
 import { FC } from 'react';
 import Activity from './../lib/activity';
+import Timeframe from '../lib/timeframe';
 import Card from './card';
 
 interface Props {
-  timeframe: string;
+  timeframe: Timeframe;
   activities: Activity[];
 }
 
